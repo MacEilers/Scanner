@@ -1,0 +1,22 @@
+package algorithmDataStructures;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author tjorven
+ * This program introduces the Java Scanner, with which it is possible to read 
+ * input from data in the console at runtime of the program. 
+ * 
+ */
+public class MyScanner {
+
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter username");
+
+        String userName = myObj.nextLine();  // Read user input
+        myObj.close();
+        System.out.println("Username is: " + userName);  // Output user input
+    }
+}
